@@ -29,32 +29,18 @@ export default function FromMyOvenNavbar() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-[78px]">
           <Link to="/" className="flex items-center gap-3">
-            <span
-              className="w-11 h-11 rounded-full flex items-center justify-center shrink-0"
-              style={{ backgroundColor: "#b76e4d" }}
-            >
-              <svg viewBox="0 0 32 32" className="w-6 h-6" fill="none">
-                <path
-                  d="M8 18c0-4 3.2-7 8-7s8 3 8 7v6H8v-6z"
-                  fill="#faf6f0"
-                />
-                <path
-                  d="M10 16c1.2-2 3.2-3.2 6-3.2S20.8 14 22 16"
-                  stroke="#c4a35a"
-                  strokeWidth="1.6"
-                  strokeLinecap="round"
-                />
-                <rect x="7" y="23" width="18" height="3" rx="1.2" fill="#c4a35a" />
-                <circle cx="16" cy="10" r="1.4" fill="#c4a35a" />
-              </svg>
-            </span>
+            <img
+              src={COMPANY.logo}
+              alt={COMPANY.brand}
+              className="h-14 w-14 rounded-full object-contain shrink-0 bg-[#faf6f0]"
+            />
             <span className="leading-tight">
               <span className="block text-xl font-bold tracking-tight">
                 <span className="text-white">FROM MY</span>
                 <span style={{ color: "#c4a35a" }}> OVEN</span>
               </span>
               <span className="block text-[10px] uppercase tracking-[0.22em]" style={{ color: "#f3e8d8" }}>
-                Homemade cakes · Made to order
+                Freshly baked daily
               </span>
             </span>
           </Link>

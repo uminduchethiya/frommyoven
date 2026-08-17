@@ -2,17 +2,17 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ZoomIn } from "lucide-react";
 import Lightbox from "../../../shared/components/Lightbox";
-import { cakeImages } from "../../../data/images";
+import { birthdayImages, weddingImages, celebrationImages } from "../../../data/images";
 
 const images = [
-  { src: cakeImages.chocolate, alt: "Chocolate fudge cake" },
-  { src: cakeImages.wedding, alt: "Wedding cake" },
-  { src: cakeImages.floral, alt: "Floral cake" },
-  { src: cakeImages.drip, alt: "Caramel drip cake" },
-  { src: cakeImages.cupcakes, alt: "Vanilla cupcakes" },
-  { src: cakeImages.strawberry, alt: "Strawberry shortcake" },
-  { src: cakeImages.rainbow, alt: "Rainbow kids cake" },
-  { src: cakeImages.cheesecake, alt: "New York cheesecake" },
+  { src: birthdayImages[0], alt: "Chocolate birthday cake" },
+  { src: birthdayImages[52], alt: "Jungle kids birthday cake" },
+  { src: celebrationImages[5], alt: "Mother's Day celebration cake" },
+  { src: weddingImages[8], alt: "Three-tier wedding cake" },
+  { src: celebrationImages[0], alt: "School celebration cake" },
+  { src: weddingImages[0], alt: "Wedding cake jars" },
+  { src: celebrationImages[9], alt: "Avurudu festival cake" },
+  { src: weddingImages[11], alt: "Mr and Mrs wedding cake" },
 ];
 
 export default function GalleryComponent() {

@@ -36,7 +36,7 @@ export default function AboutUs() {
               Browse cakes
             </Link>
             <Link to="/bakers" className="border border-primary text-primary px-5 py-2.5 rounded-full font-medium">
-              Meet our bakers
+              Meet our baker
             </Link>
           </div>
         </div>

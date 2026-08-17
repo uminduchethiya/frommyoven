@@ -1,52 +1,62 @@
-const unsplash = (id: string, w = 1600) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+const birthdaySrc = (n: number) =>
+  `/images/birthday/birthday-${String(n).padStart(2, "0")}.jpeg`;
+
+const weddingSrc = (n: number) =>
+  `/images/wedding/wedding-${String(n).padStart(2, "0")}.jpeg`;
+
+const celebrationSrc = (n: number) =>
+  `/images/celebration/celebration-${String(n).padStart(2, "0")}.jpeg`;
+
+const carouselSrc = (n: number) =>
+  `/images/carousel/carousel-${String(n).padStart(2, "0")}.jpeg`;
+
+export const birthdayImages = Array.from({ length: 53 }, (_, i) => birthdaySrc(i + 1));
+export const weddingImages = Array.from({ length: 12 }, (_, i) => weddingSrc(i + 1));
+export const celebrationImages = Array.from({ length: 13 }, (_, i) => celebrationSrc(i + 1));
+export const carouselImages = Array.from({ length: 4 }, (_, i) => carouselSrc(i + 1));
 
 export const cakeImages = {
-  chocolate: unsplash("photo-1578985545062-69928b1d9587"),
-  chocolateSlice: unsplash("photo-1563729784474-d77dbb933a9e"),
-  drip: unsplash("photo-1606890737304-57a1ca8a5b62"),
-  birthday: unsplash("photo-1464349095431-e9a21285b5f3"),
-  rainbow: unsplash("photo-1558636508-e0db3814bd1d"),
-  wedding: unsplash("photo-1535254973040-607b474cb50d"),
-  weddingTall: unsplash("photo-1464195244916-405fa0a82545"),
-  floral: unsplash("photo-1621303837174-89787a7d4729"),
-  naked: unsplash("photo-1542826438-bd32f43d626f"),
-  cupcakes: unsplash("photo-1486427944299-d1955d23e34d"),
-  redVelvet: unsplash("photo-1586985289688-ca3cf47d3e6e"),
-  redVelvetCups: unsplash("photo-1614707267537-b85aaf00c4b7"),
-  strawberry: unsplash("photo-1565958011703-44f9829ba187"),
-  cheesecake: unsplash("photo-1533134242443-d4fd215305ad"),
-  tiramisu: unsplash("photo-1571877227200-a0d98ea607e9"),
-  slices: unsplash("photo-1588195538326-c5b1e1d0d654"),
-  macarons: unsplash("photo-1612203985729-70726954388c"),
-  dessert: unsplash("photo-1488477181946-6428a0291777"),
-  pastry: unsplash("photo-1551024506-0bccd828d307"),
-  bakery: unsplash("photo-1517433670267-08bbd4be890f"),
-  bread: unsplash("photo-1509440159596-0249088772ff"),
-  kitchen: unsplash("photo-1556910103-1c02765aa8be"),
-  mixing: unsplash("photo-1556910103-1c02765aa8be"),
-  frosting: unsplash("photo-1571115177098-24ec42ed204d"),
-  lemon: unsplash("photo-1488477181946-6428a0291777"),
-  carrot: unsplash("photo-1606313564200-e75d5e30476c"),
-  mini: unsplash("photo-1486427944299-d1955d23e34d"),
-  berries: unsplash("photo-1565958011703-44f9829ba187"),
-  celebration: unsplash("photo-1464349095431-e9a21285b5f3"),
-  kids: unsplash("photo-1558636508-e0db3814bd1d"),
+  chocolate: birthdayImages[0],
+  chocolateSlice: birthdayImages[1],
+  drip: birthdayImages[19],
+  birthday: birthdayImages[0],
+  rainbow: birthdayImages[9],
+  wedding: weddingImages[8],
+  weddingTall: weddingImages[11],
+  floral: weddingImages[8],
+  naked: weddingImages[6],
+  cupcakes: celebrationImages[5],
+  redVelvet: birthdayImages[4],
+  redVelvetCups: celebrationImages[4],
+  strawberry: birthdayImages[4],
+  cheesecake: celebrationImages[12],
+  tiramisu: weddingImages[6],
+  slices: celebrationImages[12],
+  macarons: celebrationImages[5],
+  pastry: weddingImages[0],
+  bakery: celebrationImages[12],
+  bread: weddingImages[6],
+  kitchen: birthdayImages[0],
+  mixing: celebrationImages[0],
+  frosting: birthdayImages[4],
+  lemon: weddingImages[11],
+  carrot: celebrationImages[9],
+  dessert: celebrationImages[12],
+  mini: celebrationImages[5],
+  berries: birthdayImages[4],
+  celebration: celebrationImages[5],
+  kids: birthdayImages[52],
 };
 
 export const bakerPhotos = {
-  baker1: unsplash("photo-1556911220-e15b29be8c8f", 800),
-  baker2: unsplash("photo-1595273670150-bd0c3c392e46", 800),
-  baker3: unsplash("photo-1577219491135-ce391730fb2c", 800),
-  baker4: unsplash("photo-1556909114-f6e7ad7d3136", 800),
-  baker5: unsplash("photo-1607631568010-a87245c0daf8", 800),
+  baker1: "/images/bakers/deepanjali.jpeg",
 };
 
 export const guestPhotos = {
-  guest1: unsplash("photo-1507003211169-0a1dd7228f2d", 150),
-  guest2: unsplash("photo-1494790108377-be9c29b29330", 150),
-  guest3: unsplash("photo-1438761681033-6461ffad8d80", 150),
-  guest4: unsplash("photo-1500648767791-00dcc994a43e", 150),
-  guest5: unsplash("photo-1534528741775-53994a69daeb", 150),
-  guest6: unsplash("photo-1506794778202-cad84cf45f1d", 150),
+  guest1: birthdayImages[0],
+  guest2: weddingImages[8],
+  guest3: birthdayImages[52],
+  guest4: celebrationImages[5],
+  guest5: birthdayImages[4],
+  guest6: celebrationImages[12],
 };

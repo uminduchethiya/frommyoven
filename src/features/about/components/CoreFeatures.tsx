@@ -36,9 +36,9 @@ export default function CoreFeatures() {
     {
       id: 3,
       icon: ChefHat,
-      title: "Baked by our kitchen",
-      description: "Small-batch sponges, ganache and buttercream from the same home oven.",
-      reviews: "Home bakery team",
+      title: "Baked by Indi",
+      description: "Small-batch sponges, ganache and buttercream from Indi Deepanjali’s home oven.",
+      reviews: "From My Oven bakery",
     },
     {
       id: 4,

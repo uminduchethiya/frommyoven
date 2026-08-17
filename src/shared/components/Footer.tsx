@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Send, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { COMPANY, NAV_LINKS } from "../constants/company";
-import { cakeImages } from "../../data/images";
+import { cakeImages, birthdayImages, weddingImages, celebrationImages } from "../../data/images";
 import { openMailto } from "../utils/enquiry";
 
 export default function Footer() {
@@ -18,12 +18,12 @@ export default function Footer() {
   };
 
   const ovenPhotos = [
-    { src: cakeImages.chocolate, alt: "Chocolate cake" },
+    { src: cakeImages.birthday, alt: "Birthday cake" },
     { src: cakeImages.wedding, alt: "Wedding cake" },
     { src: cakeImages.cupcakes, alt: "Cupcakes" },
-    { src: cakeImages.strawberry, alt: "Strawberry cake" },
-    { src: cakeImages.floral, alt: "Floral cake" },
-    { src: cakeImages.drip, alt: "Drip cake" },
+    { src: birthdayImages[52], alt: "Jungle kids birthday cake" },
+    { src: weddingImages[0], alt: "Wedding cake jars" },
+    { src: celebrationImages[5], alt: "Celebration cake" },
   ];
 
   return (
@@ -68,10 +68,17 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <div className="text-2xl font-bold mb-3">
-              <span className="text-white">FROM MY</span>
-              <span style={{ color: "#c4a35a" }}> OVEN</span>
-            </div>
+            <Link to="/" className="inline-flex items-center gap-3 mb-3">
+              <img
+                src={COMPANY.logo}
+                alt={COMPANY.brand}
+                className="h-16 w-16 rounded-full object-contain bg-[#faf6f0]"
+              />
+              <span className="text-2xl font-bold">
+                <span className="text-white">FROM MY</span>
+                <span style={{ color: "#c4a35a" }}> OVEN</span>
+              </span>
+            </Link>
             <p className="text-sm leading-relaxed" style={{ color: "#f3e8d8" }}>
               {COMPANY.legalName} bakes homemade birthday, wedding and celebration
               cakes to order. Pickup from our Padukka kitchen, or delivery across

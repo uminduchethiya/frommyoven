@@ -1,4 +1,4 @@
-import { cakeImages } from "../../../data/images";
+import { birthdayImages, weddingImages, celebrationImages } from "../../../data/images";
 
 export const CAKE_CATEGORIES = [
   "Birthday Cakes",
@@ -76,8 +76,8 @@ export const cakesData: Cake[] = [
   {
     id: 1,
     title: "Classic Chocolate Fudge",
-    image: cakeImages.chocolate,
-    gallery: [cakeImages.chocolate, cakeImages.chocolateSlice, cakeImages.drip, cakeImages.slices, cakeImages.frosting],
+    image: birthdayImages[0],
+    gallery: birthdayImages.slice(0, 5),
     duration: "Serves 10–12",
     durationDays: 12,
     startLocation: "Dark chocolate sponge",
@@ -138,8 +138,8 @@ export const cakesData: Cake[] = [
   {
     id: 2,
     title: "Garden Rose Wedding Cake",
-    image: cakeImages.wedding,
-    gallery: [cakeImages.wedding, cakeImages.weddingTall, cakeImages.floral, cakeImages.naked, cakeImages.bakery],
+    image: weddingImages[8],
+    gallery: [weddingImages[8], weddingImages[11], weddingImages[6], weddingImages[0], weddingImages[4]],
     duration: "Serves 40–60",
     durationDays: 50,
     startLocation: "Vanilla bean & berry",
@@ -206,8 +206,8 @@ export const cakesData: Cake[] = [
   {
     id: 3,
     title: "Strawberry Cream Shortcake",
-    image: cakeImages.strawberry,
-    gallery: [cakeImages.strawberry, cakeImages.berries, cakeImages.slices, cakeImages.dessert, cakeImages.floral],
+    image: birthdayImages[4],
+    gallery: birthdayImages.slice(4, 9),
     duration: "Serves 8–10",
     durationDays: 10,
     startLocation: "Vanilla sponge",
@@ -255,8 +255,8 @@ export const cakesData: Cake[] = [
   {
     id: 4,
     title: "Red Velvet Romance",
-    image: cakeImages.redVelvet,
-    gallery: [cakeImages.redVelvet, cakeImages.redVelvetCups, cakeImages.slices, cakeImages.frosting, cakeImages.dessert],
+    image: birthdayImages[4],
+    gallery: birthdayImages.slice(4, 9),
     duration: "Serves 12–14",
     durationDays: 14,
     startLocation: "Red velvet",
@@ -304,8 +304,8 @@ export const cakesData: Cake[] = [
   {
     id: 5,
     title: "Rainbow Kids Party Cake",
-    image: cakeImages.rainbow,
-    gallery: [cakeImages.rainbow, cakeImages.kids, cakeImages.cupcakes, cakeImages.celebration, cakeImages.macarons],
+    image: birthdayImages[52],
+    gallery: [birthdayImages[52], ...birthdayImages.slice(9, 13)],
     duration: "Serves 16–20",
     durationDays: 18,
     startLocation: "Rainbow vanilla",
@@ -358,8 +358,8 @@ export const cakesData: Cake[] = [
   {
     id: 6,
     title: "Salted Caramel Drip",
-    image: cakeImages.drip,
-    gallery: [cakeImages.drip, cakeImages.chocolate, cakeImages.chocolateSlice, cakeImages.pastry, cakeImages.slices],
+    image: birthdayImages[19],
+    gallery: birthdayImages.slice(19, 24),
     duration: "Serves 12",
     durationDays: 12,
     startLocation: "Brown sugar sponge",
@@ -407,8 +407,8 @@ export const cakesData: Cake[] = [
   {
     id: 7,
     title: "New York Cheesecake",
-    image: cakeImages.cheesecake,
-    gallery: [cakeImages.cheesecake, cakeImages.berries, cakeImages.dessert, cakeImages.slices, cakeImages.pastry],
+    image: celebrationImages[12],
+    gallery: [celebrationImages[12], celebrationImages[5], weddingImages[0], celebrationImages[6], birthdayImages[4]],
     duration: "Serves 8–10",
     durationDays: 10,
     startLocation: "Baked vanilla",
@@ -457,8 +457,8 @@ export const cakesData: Cake[] = [
   {
     id: 8,
     title: "Vanilla Bean Cupcake Box",
-    image: cakeImages.cupcakes,
-    gallery: [cakeImages.cupcakes, cakeImages.redVelvetCups, cakeImages.macarons, cakeImages.mini, cakeImages.celebration],
+    image: birthdayImages[14],
+    gallery: birthdayImages.slice(14, 19),
     duration: "Box of 12",
     durationDays: 6,
     startLocation: "Vanilla bean",
@@ -501,8 +501,8 @@ export const cakesData: Cake[] = [
   {
     id: 9,
     title: "Lemon Elderflower Cake",
-    image: cakeImages.floral,
-    gallery: [cakeImages.floral, cakeImages.lemon, cakeImages.naked, cakeImages.wedding, cakeImages.berries],
+    image: weddingImages[11],
+    gallery: weddingImages.slice(8, 12),
     duration: "Serves 14–16",
     durationDays: 16,
     startLocation: "Lemon sponge",
@@ -550,8 +550,8 @@ export const cakesData: Cake[] = [
   {
     id: 10,
     title: "Triple Chocolate Truffle",
-    image: cakeImages.chocolateSlice,
-    gallery: [cakeImages.chocolateSlice, cakeImages.chocolate, cakeImages.drip, cakeImages.pastry, cakeImages.bakery],
+    image: birthdayImages[1],
+    gallery: birthdayImages.slice(1, 6),
     duration: "Serves 16",
     durationDays: 16,
     startLocation: "Dark, milk & white",
@@ -604,8 +604,8 @@ export const cakesData: Cake[] = [
   {
     id: 11,
     title: "Mini Celebration Cakes",
-    image: cakeImages.mini,
-    gallery: [cakeImages.mini, cakeImages.cupcakes, cakeImages.macarons, cakeImages.dessert, cakeImages.slices],
+    image: celebrationImages[5],
+    gallery: [celebrationImages[5], celebrationImages[0], celebrationImages[6], celebrationImages[9], celebrationImages[12]],
     duration: "Set of 6 minis",
     durationDays: 6,
     startLocation: "Mixed flavours",
@@ -653,8 +653,8 @@ export const cakesData: Cake[] = [
   {
     id: 12,
     title: "Custom Photo Cake",
-    image: cakeImages.celebration,
-    gallery: [cakeImages.celebration, cakeImages.kids, cakeImages.birthday, cakeImages.frosting, cakeImages.rainbow],
+    image: birthdayImages[19],
+    gallery: birthdayImages.slice(19, 24),
     duration: "Serves 12–20",
     durationDays: 16,
     startLocation: "Your photo",
@@ -702,8 +702,8 @@ export const cakesData: Cake[] = [
   {
     id: 13,
     title: "Tiramisu Layer Cake",
-    image: cakeImages.tiramisu,
-    gallery: [cakeImages.tiramisu, cakeImages.chocolateSlice, cakeImages.dessert, cakeImages.pastry, cakeImages.slices],
+    image: weddingImages[6],
+    gallery: [weddingImages[6], weddingImages[7], birthdayImages[0], celebrationImages[12], weddingImages[0]],
     duration: "Serves 10",
     durationDays: 10,
     startLocation: "Espresso sponge",
@@ -752,8 +752,8 @@ export const cakesData: Cake[] = [
   {
     id: 14,
     title: "Floral Naked Cake",
-    image: cakeImages.naked,
-    gallery: [cakeImages.naked, cakeImages.floral, cakeImages.wedding, cakeImages.strawberry, cakeImages.lemon],
+    image: weddingImages[0],
+    gallery: weddingImages.slice(0, 5),
     duration: "Serves 20–24",
     durationDays: 22,
     startLocation: "Vanilla & berry",

@@ -6,26 +6,25 @@ import { bakersData, type Baker } from "../data/bakersData";
 import { cakeImages } from "../../../data/images";
 
 export default function BakersPage() {
-  const [selected, setSelected] = useState<Baker | null>(null);
+  const [selected, setSelected] = useState<Baker | null>(bakersData[0] ?? null);
 
   return (
     <>
       <PageHero
-        title="Meet the Bakers"
-        subtitle="The people who mix, bake and decorate every From My Oven cake."
+        title="Meet the Baker"
+        subtitle="Indi Deepanjali designs and bakes every From My Oven cake."
         image={cakeImages.bakery}
-        crumb="Bakers"
+        crumb="Baker"
       />
 
       <section className="max-w-5xl mx-auto px-4 pt-6 mb-12">
         <div className="bg-white rounded-3xl p-6 md:p-8 shadow-sm">
           <h2 className="text-2xl font-display font-semibold text-forest mb-3">
-            A small kitchen, careful hands
+            A home kitchen, one baker
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            From My Oven is a home bakery. Our bakers are used to custom briefings,
-            allergy notes and last-minute message changes. You can request a baker
-            for a tasting, a wedding consult or a large cupcake batch.
+            From My Oven is Indi Deepanjali’s home bakery. She takes custom briefings,
+            allergy notes and last-minute message changes, and bakes each cake to order.
           </p>
         </div>
       </section>
@@ -37,7 +36,7 @@ export default function BakersPage() {
               <img
                 src={baker.photo}
                 alt={baker.name}
-                className="w-full md:w-44 h-56 md:h-44 object-cover rounded-2xl"
+                className="w-full md:w-56 h-80 md:h-72 object-contain bg-[#faf6f0] rounded-2xl"
               />
               <div className="flex-1">
                 <div className="flex flex-wrap items-start justify-between gap-3">
@@ -76,7 +75,7 @@ export default function BakersPage() {
                   }}
                   className="mt-4 bg-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#9a5a3d]"
                 >
-                  Request This Baker
+                  Message Indi
                 </button>
               </div>
             </article>
@@ -85,17 +84,17 @@ export default function BakersPage() {
 
         <div id="baker-request" className="bg-white rounded-3xl p-6 shadow-sm h-fit sticky top-24">
           <h3 className="text-xl font-display font-semibold text-forest mb-4">
-            {selected ? `Request ${selected.name}` : "Request a baker"}
+            {selected ? `Message ${selected.name}` : "Message the baker"}
           </h3>
           <EnquiryForm
             type="baker"
-            contextTitle={selected ? selected.name : "Any available baker"}
+            contextTitle={selected ? selected.name : "Indi Deepanjali"}
             contextDetails={
               selected
                 ? `Baker: ${selected.name}\nExperience: ${selected.experienceYears} years\nLanguages: ${selected.languages.join(", ")}\nRole: ${selected.vehicle}\nSpecialities: ${selected.specialities.join(", ")}`
-                : "Please assign a suitable baker for our cake order."
+                : "Please share our cake order with Indi Deepanjali."
             }
-            submitLabel="Request This Baker"
+            submitLabel="Message Indi Deepanjali"
           />
         </div>
       </section>

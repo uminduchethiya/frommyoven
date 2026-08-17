@@ -46,6 +46,18 @@ export default function FeaturedCakes() {
     },
     {
       id: 3,
+      title: "Celebration Cakes",
+      image: cakeImages.celebration,
+      price: "LKR 5,400",
+      description:
+        "School milestones, Mother’s Day, Avurudu and any gathering that needs a homemade cake — minis, cupcakes and custom designs.",
+      duration: "Serves 6+",
+      nights: "48 hrs",
+      pickup: "Pickup or delivery",
+      category: "Celebration Cakes",
+    },
+    {
+      id: 4,
       title: "Chocolate Cakes",
       image: cakeImages.chocolate,
       price: "LKR 8,500",
@@ -57,9 +69,9 @@ export default function FeaturedCakes() {
       category: "Chocolate Cakes",
     },
     {
-      id: 4,
+      id: 5,
       title: "Kids Cakes",
-      image: cakeImages.rainbow,
+      image: cakeImages.kids,
       price: "LKR 11,000",
       description:
         "Hidden rainbow layers, sprinkles and a name on top. Mild flavours, bright colours and matching cupcakes.",
@@ -69,7 +81,7 @@ export default function FeaturedCakes() {
       category: "Kids Cakes",
     },
     {
-      id: 5,
+      id: 6,
       title: "Cupcakes",
       image: cakeImages.cupcakes,
       price: "LKR 4,800",

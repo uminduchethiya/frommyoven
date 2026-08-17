@@ -93,7 +93,7 @@ export default function CustomOrder() {
       <PageHero
         title="Custom Cake Order"
         subtitle="Tell us the date, servings and style. We will reply with a size, flavour and price."
-        image={cakeImages.floral}
+        image={cakeImages.wedding}
         crumb="Custom Order"
       />
 

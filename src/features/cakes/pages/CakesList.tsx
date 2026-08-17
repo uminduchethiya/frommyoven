@@ -55,7 +55,7 @@ export default function CakesList() {
       <PageHero
         title="Cake Menu"
         subtitle="Birthday, wedding, chocolate, cupcakes and custom cakes — baked to order in our home kitchen."
-        image={cakeImages.chocolate}
+        image={cakeImages.birthday}
         crumb="Cakes"
       />
 

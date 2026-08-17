@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Cake, Shield, Heart } from "lucide-react";
-import { cakeImages } from "../../../data/images";
+import { birthdayImages, weddingImages, celebrationImages } from "../../../data/images";
 
 export default function OrderYourCake() {
   const features = [
@@ -37,16 +37,16 @@ export default function OrderYourCake() {
           <div className="relative hidden md:block">
             <div className="grid grid-cols-2 gap-5">
               <div className="relative rounded-3xl overflow-hidden shadow-xl h-64 lg:h-72">
-                <img src={cakeImages.cupcakes} alt="Cupcakes from From My Oven" className="w-full h-full object-cover" />
+                <img src={celebrationImages[5]} alt="Celebration cake from From My Oven" className="w-full h-full object-cover" />
               </div>
               <div className="relative rounded-3xl overflow-hidden shadow-xl h-64 lg:h-72 mt-12">
-                <img src={cakeImages.floral} alt="Floral celebration cake" className="w-full h-full object-cover" />
+                <img src={weddingImages[8]} alt="Wedding cake from From My Oven" className="w-full h-full object-cover" />
               </div>
               <div className="relative rounded-3xl overflow-hidden shadow-xl h-64 -mt-8">
-                <img src={cakeImages.drip} alt="Salted caramel drip cake" className="w-full h-full object-cover" />
+                <img src={birthdayImages[52]} alt="Kids birthday cake from From My Oven" className="w-full h-full object-cover" />
               </div>
               <div className="relative rounded-3xl overflow-hidden shadow-xl h-64">
-                <img src={cakeImages.strawberry} alt="Strawberry cream cake" className="w-full h-full object-cover" />
+                <img src={celebrationImages[5]} alt="Celebration cake from From My Oven" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

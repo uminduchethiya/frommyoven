@@ -1,4 +1,4 @@
-import { cakeImages } from "../../../data/images";
+import { birthdayImages, weddingImages, celebrationImages } from "../../../data/images";
 
 export interface Occasion {
   slug: string;
@@ -20,8 +20,8 @@ export const occasionsData: Occasion[] = [
     slug: "birthday",
     name: "Birthday",
     region: "Celebrations",
-    image: cakeImages.birthday,
-    gallery: [cakeImages.birthday, cakeImages.rainbow, cakeImages.chocolate, cakeImages.cupcakes],
+    image: birthdayImages[0],
+    gallery: [birthdayImages[52], ...birthdayImages.slice(0, 11)],
     intro:
       "From first birthdays to milestone 50ths, we bake cakes that match the person — chocolate for the serious sweet tooth, rainbow layers for kids, and photo cakes for the guest of honour.",
     attractions: ["Classic chocolate", "Rainbow kids cake", "Photo cakes", "Cupcake towers"],
@@ -40,8 +40,8 @@ export const occasionsData: Occasion[] = [
     slug: "wedding",
     name: "Wedding",
     region: "Weddings",
-    image: cakeImages.wedding,
-    gallery: [cakeImages.wedding, cakeImages.weddingTall, cakeImages.floral, cakeImages.naked],
+    image: weddingImages[8],
+    gallery: weddingImages,
     intro:
       "Wedding cakes from From My Oven are designed with you — tasting, flowers, height and a calm delivery to the venue. Classic white, garden roses or a rustic naked cake.",
     attractions: ["Three-tier garden rose", "Floral naked cake", "Lemon elderflower", "Keepsake top tier"],
@@ -60,8 +60,8 @@ export const occasionsData: Occasion[] = [
     slug: "anniversary",
     name: "Anniversary",
     region: "Romance",
-    image: cakeImages.redVelvet,
-    gallery: [cakeImages.redVelvet, cakeImages.tiramisu, cakeImages.naked, cakeImages.floral],
+    image: birthdayImages[4],
+    gallery: [birthdayImages[4], weddingImages[8], weddingImages[6], weddingImages[11]],
     intro:
       "A smaller, more personal cake for two or a family table. Red velvet, tiramisu and floral naked cakes are our anniversary favourites.",
     attractions: ["Red velvet romance", "Tiramisu layer", "Floral naked", "Heart toppers"],
@@ -80,8 +80,8 @@ export const occasionsData: Occasion[] = [
     slug: "engagement",
     name: "Engagement",
     region: "Romance",
-    image: cakeImages.floral,
-    gallery: [cakeImages.floral, cakeImages.naked, cakeImages.wedding, cakeImages.macarons],
+    image: weddingImages[8],
+    gallery: [weddingImages[8], weddingImages[11], weddingImages[0], weddingImages[4]],
     intro:
       "Pretty, photogenic cakes for proposal dinners and engagement parties. Think flowers, lemon, vanilla and a cake that looks as good as the ring photos.",
     attractions: ["Lemon elderflower", "Floral naked", "Macaron accents", "Mini favour cakes"],
@@ -99,8 +99,8 @@ export const occasionsData: Occasion[] = [
     slug: "kids-party",
     name: "Kids Party",
     region: "Family",
-    image: cakeImages.rainbow,
-    gallery: [cakeImages.rainbow, cakeImages.kids, cakeImages.cupcakes, cakeImages.celebration],
+    image: birthdayImages[52],
+    gallery: [birthdayImages[52], ...birthdayImages.slice(9, 12)],
     intro:
       "Colour, sprinkles and a name on top. We keep flavours mild, portions generous and themes cheerful without needing licensed characters.",
     attractions: ["Rainbow reveal", "Cupcake boxes", "Name toppers", "Mild vanilla sponge"],
@@ -118,8 +118,8 @@ export const occasionsData: Occasion[] = [
     slug: "baby-shower",
     name: "Baby Shower",
     region: "Family",
-    image: cakeImages.cupcakes,
-    gallery: [cakeImages.cupcakes, cakeImages.mini, cakeImages.floral, cakeImages.macarons],
+    image: celebrationImages[5],
+    gallery: [celebrationImages[5], celebrationImages[4], weddingImages[8], celebrationImages[8]],
     intro:
       "Soft colours, cupcake towers and a centrepiece cake for baby showers. We can keep flavours light and decorations gender-neutral or themed.",
     attractions: ["Cupcake tower", "Mini cakes", "Floral naked", "Pastel buttercream"],
@@ -137,8 +137,8 @@ export const occasionsData: Occasion[] = [
     slug: "corporate",
     name: "Corporate",
     region: "Events",
-    image: cakeImages.bakery,
-    gallery: [cakeImages.bakery, cakeImages.celebration, cakeImages.cupcakes, cakeImages.slices],
+    image: celebrationImages[12],
+    gallery: [celebrationImages[12], celebrationImages[5], birthdayImages[0], celebrationImages[0]],
     intro:
       "Office birthdays, product launches and client gifts. We can print a logo, box cupcakes for the team or send a sheet cake that slices cleanly.",
     attractions: ["Logo photo cakes", "Office cupcake boxes", "Sheet cakes", "Branded boxes"],
@@ -156,8 +156,8 @@ export const occasionsData: Occasion[] = [
     slug: "christmas",
     name: "Christmas",
     region: "Seasonal",
-    image: cakeImages.dessert,
-    gallery: [cakeImages.dessert, cakeImages.pastry, cakeImages.carrot, cakeImages.chocolate],
+    image: celebrationImages[6],
+    gallery: [celebrationImages[6], celebrationImages[9], celebrationImages[12], birthdayImages[0]],
     intro:
       "Festive sponges, spice, chocolate and pretty boxes for gifting. We open a limited Christmas pre-order list each December.",
     attractions: ["Chocolate showpiece", "Carrot spice", "Gift minis", "Dessert platters"],
@@ -175,8 +175,8 @@ export const occasionsData: Occasion[] = [
     slug: "valentines",
     name: "Valentine's Day",
     region: "Romance",
-    image: cakeImages.redVelvet,
-    gallery: [cakeImages.redVelvet, cakeImages.redVelvetCups, cakeImages.macarons, cakeImages.tiramisu],
+    image: birthdayImages[4],
+    gallery: [birthdayImages[4], celebrationImages[5], weddingImages[8], weddingImages[11]],
     intro:
       "Heart cakes, red velvet and a two-person tiramisu. We run a Valentine’s menu every February with a clear cutoff date.",
     attractions: ["Heart red velvet", "Tiramisu for two", "Macaron boxes", "Message plaques"],
@@ -194,8 +194,8 @@ export const occasionsData: Occasion[] = [
     slug: "graduation",
     name: "Graduation",
     region: "Milestones",
-    image: cakeImages.drip,
-    gallery: [cakeImages.drip, cakeImages.celebration, cakeImages.chocolate, cakeImages.birthday],
+    image: birthdayImages[19],
+    gallery: [birthdayImages[19], celebrationImages[0], birthdayImages[0], birthdayImages[52]],
     intro:
       "Bold drip cakes, school colours and a name on top for graduation dinners and family photos.",
     attractions: ["Salted caramel drip", "Photo cakes", "Chocolate fudge", "Colour-matched drip"],
@@ -213,8 +213,8 @@ export const occasionsData: Occasion[] = [
     slug: "eid",
     name: "Festival",
     region: "Seasonal",
-    image: cakeImages.macarons,
-    gallery: [cakeImages.macarons, cakeImages.dessert, cakeImages.mini, cakeImages.pastry],
+    image: celebrationImages[9],
+    gallery: [celebrationImages[9], celebrationImages[6], celebrationImages[12], celebrationImages[5]],
     intro:
       "Sharing cakes and sweet boxes for Eid, Avurudu and family festival tables. We keep designs elegant and flavours that travel well between homes.",
     attractions: ["Mini celebration set", "Dessert platters", "Chocolate fudge", "Gift boxes"],
@@ -232,11 +232,11 @@ export const occasionsData: Occasion[] = [
     slug: "celebration",
     name: "Any Celebration",
     region: "Everyday",
-    image: cakeImages.slices,
-    gallery: [cakeImages.slices, cakeImages.bakery, cakeImages.cupcakes, cakeImages.cheesecake],
+    image: celebrationImages[5],
+    gallery: celebrationImages,
     intro:
-      "No big theme required. If you just want a homemade cake this week — chocolate, cheesecake, cupcakes or a simple vanilla — this is the place to start.",
-    attractions: ["Chocolate fudge", "Cheesecake", "Cupcake boxes", "Strawberry shortcake"],
+      "School milestones, Mother’s Day, Avurudu or a quiet gathering — we bake cakes for any celebration that needs a homemade centrepiece.",
+    attractions: ["Mini celebration cakes", "School theme cakes", "Festival cakes", "Cupcake boxes"],
     thingsToDo: [
       "Pick a flavour and a size",
       "Add a short message",
@@ -245,7 +245,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "24–48 hours for most cakes",
     recommendedDays: "Serves 6–16",
     nearby: ["birthday", "corporate", "graduation"],
-    cakeIds: [1, 3, 7, 8],
+    cakeIds: [11, 1, 3, 8],
   },
 ];
 

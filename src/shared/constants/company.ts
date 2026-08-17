@@ -2,6 +2,7 @@ export const COMPANY = {
   brand: "From My Oven",
   legalName: "From My Oven Bakery",
   tagline: "Homemade cakes, made to order",
+  logo: "/images/logo.jpg",
   phone: "+94 77 293 3146",
   phoneTel: "+94772933146",
   whatsapp: "94772933146",
@@ -18,7 +19,7 @@ export const NAV_LINKS = [
   { label: "Custom Order", to: "/custom-order" },
   { label: "Occasions", to: "/occasions" },
   { label: "Gallery", to: "/gallery" },
-  { label: "Bakers", to: "/bakers" },
+  { label: "Baker", to: "/bakers" },
   { label: "About Us", to: "/about" },
   { label: "Contact", to: "/contact" },
 ] as const;

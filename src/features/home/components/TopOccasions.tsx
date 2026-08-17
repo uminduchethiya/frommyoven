@@ -13,9 +13,9 @@ export default function TopOccasions() {
   const occasions: Occasion[] = [
     { id: 1, city: "Wedding", slug: "wedding", tours: 3, image: cakeImages.wedding },
     { id: 2, city: "Birthday", slug: "birthday", tours: 5, image: cakeImages.birthday },
-    { id: 3, city: "Kids Party", slug: "kids-party", tours: 3, image: cakeImages.rainbow },
+    { id: 3, city: "Kids Party", slug: "kids-party", tours: 3, image: cakeImages.kids },
     { id: 4, city: "Anniversary", slug: "anniversary", tours: 3, image: cakeImages.redVelvet },
-    { id: 5, city: "Any Celebration", slug: "celebration", tours: 4, image: cakeImages.chocolate },
+    { id: 5, city: "Any Celebration", slug: "celebration", tours: 4, image: cakeImages.celebration },
   ];
 
   return (
