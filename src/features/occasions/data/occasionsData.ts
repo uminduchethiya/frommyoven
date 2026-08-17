@@ -34,7 +34,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "Order 2–5 days ahead; kids themes need 5 days",
     recommendedDays: "Serves 8–20",
     nearby: ["kids-party", "celebration", "baby-shower"],
-    cakeIds: [1, 3, 5, 8, 12],
+    cakeIds: [1, 3, 4, 5, 6, 13, 14],
   },
   {
     slug: "wedding",
@@ -54,7 +54,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "Book 3–8 weeks before the wedding",
     recommendedDays: "Serves 40–80",
     nearby: ["engagement", "anniversary", "valentines"],
-    cakeIds: [2, 9, 14],
+    cakeIds: [2, 8, 9],
   },
   {
     slug: "anniversary",
@@ -74,7 +74,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "48 hours to 5 days",
     recommendedDays: "Serves 6–16",
     nearby: ["wedding", "valentines", "engagement"],
-    cakeIds: [4, 13, 14],
+    cakeIds: [2, 4, 13],
   },
   {
     slug: "engagement",
@@ -93,7 +93,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "5–10 days",
     recommendedDays: "Serves 12–30",
     nearby: ["wedding", "anniversary", "celebration"],
-    cakeIds: [9, 11, 14],
+    cakeIds: [2, 8, 9],
   },
   {
     slug: "kids-party",
@@ -112,7 +112,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "5 days for themed cakes",
     recommendedDays: "Serves 16–24",
     nearby: ["birthday", "baby-shower", "celebration"],
-    cakeIds: [5, 8, 12],
+    cakeIds: [5, 6, 7, 14],
   },
   {
     slug: "baby-shower",
@@ -131,7 +131,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "5–7 days",
     recommendedDays: "Serves 15–30",
     nearby: ["kids-party", "celebration", "baby-shower"],
-    cakeIds: [8, 9, 11],
+    cakeIds: [7, 11],
   },
   {
     slug: "corporate",
@@ -150,7 +150,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "4–7 days for printed logos",
     recommendedDays: "Serves 12–40",
     nearby: ["celebration", "birthday", "graduation"],
-    cakeIds: [8, 11, 12],
+    cakeIds: [8, 11],
   },
   {
     slug: "christmas",
@@ -169,7 +169,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "Pre-order 2 weeks ahead in December",
     recommendedDays: "Serves 8–16",
     nearby: ["celebration", "eid", "valentines"],
-    cakeIds: [1, 6, 11],
+    cakeIds: [11, 12],
   },
   {
     slug: "valentines",
@@ -188,7 +188,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "Order 5–7 days before 14 February",
     recommendedDays: "Serves 2–8",
     nearby: ["anniversary", "engagement", "wedding"],
-    cakeIds: [4, 8, 13],
+    cakeIds: [4, 13],
   },
   {
     slug: "graduation",
@@ -207,7 +207,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "3–5 days",
     recommendedDays: "Serves 12–20",
     nearby: ["birthday", "celebration", "corporate"],
-    cakeIds: [1, 6, 12],
+    cakeIds: [1, 14],
   },
   {
     slug: "eid",
@@ -226,7 +226,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "5–7 days in festival weeks",
     recommendedDays: "Serves 10–24",
     nearby: ["celebration", "christmas", "valentines"],
-    cakeIds: [1, 7, 11],
+    cakeIds: [11, 12],
   },
   {
     slug: "celebration",
@@ -245,7 +245,7 @@ export const occasionsData: Occasion[] = [
     bestTime: "24–48 hours for most cakes",
     recommendedDays: "Serves 6–16",
     nearby: ["birthday", "corporate", "graduation"],
-    cakeIds: [11, 1, 3, 8],
+    cakeIds: [10, 11, 12],
   },
 ];
 

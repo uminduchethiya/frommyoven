@@ -65,8 +65,7 @@ export default function Home() {
                   <option value="">Any style</option>
                   <option value="Birthday Cakes">Birthday</option>
                   <option value="Wedding Cakes">Wedding</option>
-                  <option value="Chocolate Cakes">Chocolate</option>
-                  <option value="Cupcakes">Cupcakes</option>
+                  <option value="Celebration Cakes">Celebration</option>
                 </select>
               </div>
 

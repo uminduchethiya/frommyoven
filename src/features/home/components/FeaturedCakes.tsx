@@ -50,47 +50,11 @@ export default function FeaturedCakes() {
       image: cakeImages.celebration,
       price: "LKR 5,400",
       description:
-        "School milestones, Mother’s Day, Avurudu and any gathering that needs a homemade cake — minis, cupcakes and custom designs.",
+        "School milestones, Mother’s Day, Avurudu and any gathering that needs a homemade cake.",
       duration: "Serves 6+",
       nights: "48 hrs",
       pickup: "Pickup or delivery",
       category: "Celebration Cakes",
-    },
-    {
-      id: 4,
-      title: "Chocolate Cakes",
-      image: cakeImages.chocolate,
-      price: "LKR 8,500",
-      description:
-        "Classic fudge, salted caramel drip and triple chocolate truffle — for people who want a proper cocoa cake.",
-      duration: "Serves 12",
-      nights: "48 hrs",
-      pickup: "Pickup or delivery",
-      category: "Chocolate Cakes",
-    },
-    {
-      id: 5,
-      title: "Kids Cakes",
-      image: cakeImages.kids,
-      price: "LKR 11,000",
-      description:
-        "Hidden rainbow layers, sprinkles and a name on top. Mild flavours, bright colours and matching cupcakes.",
-      duration: "Serves 16+",
-      nights: "5 days",
-      pickup: "Party delivery",
-      category: "Kids Cakes",
-    },
-    {
-      id: 6,
-      title: "Cupcakes",
-      image: cakeImages.cupcakes,
-      price: "LKR 4,800",
-      description:
-        "A dozen vanilla, chocolate or red velvet cupcakes in a bakery box — perfect for offices and last-minute parties.",
-      duration: "Box of 12",
-      nights: "24 hrs",
-      pickup: "Same-week slots",
-      category: "Cupcakes",
     },
   ];
 

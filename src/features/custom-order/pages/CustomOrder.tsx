@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 import PageHero from "../../../shared/components/PageHero";
 import { occasionsData } from "../../occasions/data/occasionsData";
 import { CAKE_CATEGORIES } from "../../cakes/data/cakesData";
-import { cakeImages } from "../../../data/images";
+import { pageHeroImages } from "../../../data/images";
 import { openMailto, openWhatsApp, saveEnquiry } from "../../../shared/utils/enquiry";
 
 const frostings = ["Buttercream", "Ganache", "Cream cheese", "Whipped cream", "Fondant accents", "Mix"];
@@ -93,7 +93,7 @@ export default function CustomOrder() {
       <PageHero
         title="Custom Cake Order"
         subtitle="Tell us the date, servings and style. We will reply with a size, flavour and price."
-        image={cakeImages.wedding}
+        image={pageHeroImages.customOrder}
         crumb="Custom Order"
       />
 

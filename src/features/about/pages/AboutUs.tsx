@@ -4,7 +4,7 @@ import TestimonialCarousel from "../../home/components/TestimonialCarousel";
 import CoreFeatures from "../components/CoreFeatures";
 import BakerTeam from "../components/BakerTeam";
 import PageHero from "../../../shared/components/PageHero";
-import { cakeImages } from "../../../data/images";
+import { pageHeroImages } from "../../../data/images";
 import { COMPANY } from "../../../shared/constants/company";
 
 export default function AboutUs() {
@@ -13,7 +13,7 @@ export default function AboutUs() {
       <PageHero
         title="About Us"
         subtitle={`${COMPANY.legalName} — homemade cakes from ${COMPANY.location}.`}
-        image={cakeImages.kitchen}
+        image={pageHeroImages.about}
         crumb="About Us"
       />
       <section className="max-w-5xl mx-auto px-4 pb-8">

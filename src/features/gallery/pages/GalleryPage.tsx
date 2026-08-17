@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import PageHero from "../../../shared/components/PageHero";
 import Lightbox from "../../../shared/components/Lightbox";
 import { GALLERY_CATEGORIES, galleryImages } from "../data/galleryData";
-import { cakeImages } from "../../../data/images";
+import { pageHeroImages } from "../../../data/images";
 
 export default function GalleryPage() {
   const [category, setCategory] = useState<string>("All");
@@ -21,7 +21,7 @@ export default function GalleryPage() {
       <PageHero
         title="Cake Gallery"
         subtitle="Birthday cakes, wedding tiers, cupcakes and everyday bakes from our oven."
-        image={cakeImages.bakery}
+        image={pageHeroImages.gallery}
         crumb="Gallery"
       />
 

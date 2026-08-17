@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { Clock, Cake, Layers, Ruler, Timer, Sparkles } from "lucide-react";
 import PageHero from "../../../shared/components/PageHero";
@@ -8,31 +8,39 @@ import {
   cakesData,
   type CakeCategory,
 } from "../data/cakesData";
-import { cakeImages } from "../../../data/images";
+import { pageHeroImages } from "../../../data/images";
+import { occasionsData } from "../../occasions/data/occasionsData";
 
 export default function CakesList() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const initialCategory = searchParams.get("category") || "All";
+  const categoryParam = searchParams.get("category") || "All";
+  const activeCategory = (CAKE_CATEGORIES as readonly string[]).includes(categoryParam)
+    ? categoryParam
+    : "All";
   const destinationFilter = searchParams.get("destination") || "";
   const durationFilter = searchParams.get("duration") || "";
-  const [activeCategory, setActiveCategory] = useState<string>(initialCategory);
 
   const categories = ["All", ...CAKE_CATEGORIES];
 
   const filteredCakes = useMemo(() => {
+    const occasion = occasionsData.find(
+      (item) =>
+        item.name.toLowerCase() === destinationFilter.toLowerCase() ||
+        item.slug === destinationFilter.toLowerCase()
+    );
+
     return cakesData.filter((cake) => {
       const matchesCategory =
         activeCategory === "All" ||
         cake.categories.includes(activeCategory as CakeCategory);
       const matchesDestination =
         !destinationFilter ||
-        cake.places.some((place) =>
-          place.toLowerCase().includes(destinationFilter.toLowerCase())
-        ) ||
-        cake.title.toLowerCase().includes(destinationFilter.toLowerCase()) ||
-        cake.categories.some((item) =>
-          item.toLowerCase().includes(destinationFilter.toLowerCase())
-        );
+        (occasion
+          ? occasion.cakeIds.includes(cake.id)
+          : cake.title.toLowerCase().includes(destinationFilter.toLowerCase()) ||
+            cake.categories.some((item) =>
+              item.toLowerCase().includes(destinationFilter.toLowerCase())
+            ));
       const matchesDuration =
         !durationFilter ||
         (durationFilter === "1-3" && cake.durationDays <= 8) ||
@@ -43,7 +51,6 @@ export default function CakesList() {
   }, [activeCategory, destinationFilter, durationFilter]);
 
   const selectCategory = (category: string) => {
-    setActiveCategory(category);
     const next = new URLSearchParams(searchParams);
     if (category === "All") next.delete("category");
     else next.set("category", category);
@@ -54,8 +61,8 @@ export default function CakesList() {
     <>
       <PageHero
         title="Cake Menu"
-        subtitle="Birthday, wedding, chocolate, cupcakes and custom cakes — baked to order in our home kitchen."
-        image={cakeImages.birthday}
+        subtitle="Birthday, wedding and celebration cakes — baked to order in our home kitchen."
+        image={pageHeroImages.cakes}
         crumb="Cakes"
       />
 

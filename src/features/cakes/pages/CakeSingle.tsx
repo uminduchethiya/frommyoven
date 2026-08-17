@@ -145,16 +145,19 @@ export default function CakeSingle() {
             </div>
           </section>
 
-          <section className="bg-white rounded-3xl p-6 md:p-8 shadow-sm">
-            <h2 className="text-2xl font-display font-semibold text-forest mb-4">Gallery</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {cake.gallery.map((src, index) => (
-                <button key={src + index} onClick={() => setLightboxIndex(index)} className="overflow-hidden rounded-2xl">
-                  <img src={src} alt={`${cake.title} ${index + 1}`} className="h-36 w-full object-cover hover:scale-105 transition" />
-                </button>
-              ))}
-            </div>
-          </section>
+          {cake.gallery.length > 1 && (
+            <section className="bg-white rounded-3xl p-6 md:p-8 shadow-sm">
+              <h2 className="text-2xl font-display font-semibold text-forest mb-4">Gallery</h2>
+              <p className="text-sm text-gray-500 mb-4">More photos of this cake</p>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                {cake.gallery.map((src, index) => (
+                  <button key={src + index} onClick={() => setLightboxIndex(index)} className="overflow-hidden rounded-2xl">
+                    <img src={src} alt={`${cake.title} ${index + 1}`} className="h-36 w-full object-cover hover:scale-105 transition" />
+                  </button>
+                ))}
+              </div>
+            </section>
+          )}
 
           <section className="bg-white rounded-3xl p-6 md:p-8 shadow-sm">
             <h2 className="text-2xl font-display font-semibold text-forest mb-4">Our kitchen</h2>

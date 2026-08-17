@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PageHero from "../../../shared/components/PageHero";
 import { occasionsData } from "../data/occasionsData";
-import { cakeImages } from "../../../data/images";
+import { pageHeroImages } from "../../../data/images";
 
 export default function OccasionsList() {
   return (
@@ -9,7 +9,7 @@ export default function OccasionsList() {
       <PageHero
         title="Occasions"
         subtitle="Birthday, wedding, kids’ parties, corporate tables and quiet celebrations at home."
-        image={cakeImages.celebration}
+        image={pageHeroImages.occasions}
         crumb="Occasions"
       />
       <section className="max-w-7xl mx-auto px-4 pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

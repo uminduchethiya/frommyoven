@@ -3,7 +3,7 @@ import { Star, Languages, Cake, Sparkles } from "lucide-react";
 import PageHero from "../../../shared/components/PageHero";
 import EnquiryForm from "../../../shared/components/EnquiryForm";
 import { bakersData, type Baker } from "../data/bakersData";
-import { cakeImages } from "../../../data/images";
+import { pageHeroImages } from "../../../data/images";
 
 export default function BakersPage() {
   const [selected, setSelected] = useState<Baker | null>(bakersData[0] ?? null);
@@ -13,7 +13,7 @@ export default function BakersPage() {
       <PageHero
         title="Meet the Baker"
         subtitle="Indi Deepanjali designs and bakes every From My Oven cake."
-        image={cakeImages.bakery}
+        image={pageHeroImages.baker}
         crumb="Baker"
       />
 

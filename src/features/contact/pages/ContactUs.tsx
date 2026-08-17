@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import PageHero from "../../../shared/components/PageHero";
 import EnquiryForm from "../../../shared/components/EnquiryForm";
 import { COMPANY } from "../../../shared/constants/company";
-import { cakeImages } from "../../../data/images";
+import { pageHeroImages } from "../../../data/images";
 
 export default function ContactUs() {
   const contactInfo = [
@@ -16,7 +16,7 @@ export default function ContactUs() {
       <PageHero
         title="Contact Us"
         subtitle="Ask about a menu cake, a custom design, a tasting or a delivery slot."
-        image={cakeImages.bakery}
+        image={pageHeroImages.contact}
         crumb="Contact"
       />
 

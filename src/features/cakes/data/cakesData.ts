@@ -1,16 +1,9 @@
-import { birthdayImages, weddingImages, celebrationImages } from "../../../data/images";
+import { cakeGalleries } from "../../../data/images";
 
 export const CAKE_CATEGORIES = [
   "Birthday Cakes",
   "Wedding Cakes",
-  "Anniversary Cakes",
-  "Cupcakes",
-  "Chocolate Cakes",
-  "Cheesecakes",
-  "Kids Cakes",
-  "Custom Cakes",
   "Celebration Cakes",
-  "Mini Cakes",
 ] as const;
 
 export type CakeCategory = (typeof CAKE_CATEGORIES)[number];
@@ -76,8 +69,8 @@ export const cakesData: Cake[] = [
   {
     id: 1,
     title: "Classic Chocolate Fudge",
-    image: birthdayImages[0],
-    gallery: birthdayImages.slice(0, 5),
+    image: cakeGalleries.chocolateDrip[0],
+    gallery: cakeGalleries.chocolateDrip,
     duration: "Serves 10–12",
     durationDays: 12,
     startLocation: "Dark chocolate sponge",
@@ -104,7 +97,7 @@ export const cakesData: Cake[] = [
       "Care and serving notes",
     ],
     excluded: ["Delivery outside Colombo", "Edible gold leaf", "Photo print topper"],
-    categories: ["Chocolate Cakes", "Birthday Cakes", "Celebration Cakes"],
+    categories: ["Birthday Cakes"],
     itinerary: [
       {
         day: 1,
@@ -138,8 +131,8 @@ export const cakesData: Cake[] = [
   {
     id: 2,
     title: "Garden Rose Wedding Cake",
-    image: weddingImages[8],
-    gallery: [weddingImages[8], weddingImages[11], weddingImages[6], weddingImages[0], weddingImages[4]],
+    image: cakeGalleries.weddingRoses[2],
+    gallery: cakeGalleries.weddingRoses,
     duration: "Serves 40–60",
     durationDays: 50,
     startLocation: "Vanilla bean & berry",
@@ -166,7 +159,7 @@ export const cakesData: Cake[] = [
       "Serving kit",
     ],
     excluded: ["Fresh imported flowers", "Late-night venue overtime", "Alcohol-soaked tiers"],
-    categories: ["Wedding Cakes", "Custom Cakes", "Celebration Cakes"],
+    categories: ["Wedding Cakes"],
     itinerary: [
       {
         day: 1,
@@ -205,21 +198,21 @@ export const cakesData: Cake[] = [
   },
   {
     id: 3,
-    title: "Strawberry Cream Shortcake",
-    image: birthdayImages[4],
-    gallery: birthdayImages.slice(4, 9),
+    title: "Gold Ruffle Birthday Cake",
+    image: cakeGalleries.goldRuffle[0],
+    gallery: cakeGalleries.goldRuffle,
     duration: "Serves 8–10",
     durationDays: 10,
     startLocation: "Vanilla sponge",
-    endLocation: "Chantilly cream",
+    endLocation: "Gold ruffles & candles",
     price: 7800,
     shortDescription:
-      "Light vanilla layers, fresh strawberries and softly whipped cream.",
+      "A rectangular cream cake with white ruffles, gold pearls and tall gold candles.",
     overview:
-      "A bakery classic: airy vanilla sponge, macerated strawberries and Chantilly cream. Best eaten the same day — we bake it fresh for your party.",
-    places: ["Vanilla", "Strawberry", "Cream", "Lemon zest"],
-    accommodation: "Soft vanilla sponge",
-    transport: "7 inch round",
+      "A rectangular celebration cake finished with wafer-style white ruffles, gold and white pearls, a gold Happy Birthday topper and tall wavy gold candles. Photographed from a few angles so you can see the same cake up close.",
+    places: ["Vanilla", "Buttercream", "Gold pearls", "Ruffles"],
+    accommodation: "Rectangular vanilla sponge",
+    transport: "Rectangle board",
     meals: "24–48 hours notice",
     highlights: [
       "Fresh seasonal strawberries",
@@ -229,7 +222,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Bakery box", "Serving spoon", "Fresh fruit garnish"],
     excluded: ["Out-of-season imported berries", "Overnight holding beyond 24 hours"],
-    categories: ["Birthday Cakes", "Celebration Cakes"],
+    categories: ["Birthday Cakes"],
     itinerary: [
       {
         day: 1,
@@ -254,20 +247,20 @@ export const cakesData: Cake[] = [
   },
   {
     id: 4,
-    title: "Red Velvet Romance",
-    image: birthdayImages[4],
-    gallery: birthdayImages.slice(4, 9),
+    title: "Yugeli Princess Cake",
+    image: cakeGalleries.yugeli[0],
+    gallery: cakeGalleries.yugeli,
     duration: "Serves 12–14",
     durationDays: 14,
-    startLocation: "Red velvet",
-    endLocation: "Cream cheese frosting",
+    startLocation: "Vanilla sponge",
+    endLocation: "Pink princess finish",
     price: 9200,
     shortDescription:
-      "Velvet crumb, a hint of cocoa and tangy cream-cheese frosting.",
+      "Pink princess cake with a crown, pearls and Yugeli in pink letters.",
     overview:
-      "Our red velvet is cocoa-scented, deep red and paired with a not-too-sweet cream cheese frosting. A favourite for anniversaries and Valentine’s tables.",
-    places: ["Red velvet", "Cream cheese", "Cocoa", "Vanilla"],
-    accommodation: "Two-layer red velvet",
+      "A tall pink birthday cake with a gold crown, pearls and the name Yugeli on the front. Extra photos show the same cake from other angles — not a different design.",
+    places: ["Vanilla", "Pink buttercream", "Pearls", "Crown topper"],
+    accommodation: "Tall round sponge",
     transport: "8 inch round",
     meals: "48 hours notice",
     highlights: [
@@ -278,7 +271,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Cake box", "Rose petals or heart topper", "Message card"],
     excluded: ["Fondant covering", "Alcohol filling"],
-    categories: ["Anniversary Cakes", "Birthday Cakes", "Cupcakes"],
+    categories: ["Birthday Cakes"],
     itinerary: [
       {
         day: 1,
@@ -303,21 +296,21 @@ export const cakesData: Cake[] = [
   },
   {
     id: 5,
-    title: "Rainbow Kids Party Cake",
-    image: birthdayImages[52],
-    gallery: [birthdayImages[52], ...birthdayImages.slice(9, 13)],
+    title: "Mayen Safari Cake",
+    image: cakeGalleries.mayen[0],
+    gallery: cakeGalleries.mayen,
     duration: "Serves 16–20",
     durationDays: 18,
-    startLocation: "Rainbow vanilla",
-    endLocation: "Buttercream clouds",
+    startLocation: "Vanilla sponge",
+    endLocation: "Safari animals & gold 1",
     price: 11000,
     shortDescription:
-      "Hidden rainbow layers, sprinkles and a fun theme for kids’ birthdays.",
+      "Mayen’s 1st birthday safari cake with a lion, jungle animals and a gold number one.",
     overview:
-      "Six colourful vanilla layers under a cloud of buttercream. We can match a favourite character colour palette, add a name topper and pack matching cupcakes.",
-    places: ["Vanilla", "Rainbow", "Sprinkles", "White chocolate"],
-    accommodation: "Six-layer rainbow sponge",
-    transport: "8 inch tall",
+      "A kids’ first-birthday cake in a safari theme — lion, jungle animals and a gold 1. We can match a name, age and animal colours for your party.",
+    places: ["Vanilla", "Safari theme", "Gold 1", "Jungle animals"],
+    accommodation: "Themed kids sponge",
+    transport: "8 inch round",
     meals: "5 days notice",
     highlights: [
       "Hidden rainbow reveal",
@@ -327,7 +320,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Candles", "Paper plates on request", "Theme colour match"],
     excluded: ["Licensed character figurines", "Indoor fireworks"],
-    categories: ["Kids Cakes", "Birthday Cakes", "Custom Cakes"],
+    categories: ["Birthday Cakes"],
     itinerary: [
       {
         day: 1,
@@ -357,21 +350,21 @@ export const cakesData: Cake[] = [
   },
   {
     id: 6,
-    title: "Salted Caramel Drip",
-    image: birthdayImages[19],
-    gallery: birthdayImages.slice(19, 24),
+    title: "Bevindu Jungle Cake",
+    image: cakeGalleries.bevindu[0],
+    gallery: cakeGalleries.bevindu,
     duration: "Serves 12",
     durationDays: 12,
-    startLocation: "Brown sugar sponge",
-    endLocation: "Salted caramel drip",
+    startLocation: "Vanilla sponge",
+    endLocation: "Jungle cupcakes",
     price: 9800,
     shortDescription:
-      "Brown-sugar cake, caramel buttercream and a shiny salted drip.",
+      "Bevindu jungle cake with matching green cupcakes — extra photos of the same set.",
     overview:
-      "For caramel lovers: moist brown-sugar sponge, homemade salted caramel and a chocolate drip. Looks dramatic on the table and slices neatly.",
-    places: ["Caramel", "Brown sugar", "Dark chocolate", "Sea salt"],
-    accommodation: "Two-layer brown sugar sponge",
-    transport: "8 inch round",
+      "A jungle-themed birthday cake with matching green cupcakes. The gallery shows this same cake and cupcake set from different angles.",
+    places: ["Vanilla", "Jungle theme", "Green cupcakes", "Name topper"],
+    accommodation: "Themed cake plus cupcakes",
+    transport: "Cake and cupcake box",
     meals: "48 hours notice",
     highlights: [
       "Homemade salted caramel",
@@ -381,7 +374,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Cake box", "Extra caramel pot", "Message plaque"],
     excluded: ["Gold leaf", "Macaron tower"],
-    categories: ["Chocolate Cakes", "Celebration Cakes", "Birthday Cakes"],
+    categories: ["Birthday Cakes"],
     itinerary: [
       {
         day: 1,
@@ -406,21 +399,21 @@ export const cakesData: Cake[] = [
   },
   {
     id: 7,
-    title: "New York Cheesecake",
-    image: celebrationImages[12],
-    gallery: [celebrationImages[12], celebrationImages[5], weddingImages[0], celebrationImages[6], birthdayImages[4]],
+    title: "First Birthday One Cake",
+    image: cakeGalleries.oneSmash[0],
+    gallery: cakeGalleries.oneSmash,
     duration: "Serves 8–10",
     durationDays: 10,
-    startLocation: "Baked vanilla",
-    endLocation: "Berry compote",
+    startLocation: "Vanilla smash cake",
+    endLocation: "Blue & cream One",
     price: 7200,
     shortDescription:
-      "Dense baked cheesecake on a biscuit base, with a jug of berry sauce.",
+      "Blue and cream first-birthday smash cake with a gold One topper.",
     overview:
-      "A proper baked cheesecake — creamy, slightly tangy and set overnight. Serve plain or with our warm berry compote.",
-    places: ["Cream cheese", "Vanilla", "Biscuit", "Berry"],
-    accommodation: "Baked vanilla cheesecake",
-    transport: "8 inch tin",
+      "A first-birthday smash cake in blue and cream, with a gold One. Extra photos are the same cake from other angles.",
+    places: ["Vanilla", "Blue cream", "Smash cake", "Gold One"],
+    accommodation: "Small smash cake",
+    transport: "6 inch round",
     meals: "48 hours notice",
     highlights: [
       "Overnight set for a clean slice",
@@ -430,7 +423,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Sauce jug", "Cake box", "Serving notes"],
     excluded: ["Alcohol-soaked fruit", "Same-day bake"],
-    categories: ["Cheesecakes", "Mini Cakes", "Celebration Cakes"],
+    categories: ["Birthday Cakes"],
     itinerary: [
       {
         day: 1,
@@ -456,22 +449,22 @@ export const cakesData: Cake[] = [
   },
   {
     id: 8,
-    title: "Vanilla Bean Cupcake Box",
-    image: birthdayImages[14],
-    gallery: birthdayImages.slice(14, 19),
+    title: "Wedding Cake Jars",
+    image: cakeGalleries.weddingJars[0],
+    gallery: cakeGalleries.weddingJars,
     duration: "Box of 12",
     durationDays: 6,
-    startLocation: "Vanilla bean",
-    endLocation: "Swirled buttercream",
+    startLocation: "Vanilla & berry",
+    endLocation: "Named wedding jars",
     price: 4800,
     shortDescription:
-      "A dozen fluffy vanilla cupcakes with piped buttercream and sprinkles.",
+      "Individual wedding cake jars with wooden spoons — Diliru & Lakdini style favours.",
     overview:
-      "Our bestselling box for offices, kids’ tables and last-minute celebrations. Mix vanilla, chocolate and red velvet in one box if you like.",
-    places: ["Vanilla", "Chocolate", "Red velvet", "Lemon"],
-    accommodation: "Soft cupcake sponges",
-    transport: "12-piece bakery box",
-    meals: "24 hours notice",
+      "Cake in a jar with a wooden spoon, tied with ribbon — a wedding favour guests can take home. The gallery shows this same jar set, not other cakes.",
+    places: ["Vanilla", "Berry", "Jar favours", "Wooden spoons"],
+    accommodation: "Individual cake jars",
+    transport: "Jar set with spoons",
+    meals: "7 days notice",
     highlights: [
       "Mix-and-match flavours",
       "Name tags for parties",
@@ -480,7 +473,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Window bakery box", "Flavour labels", "Candles"],
     excluded: ["Individual gift boxes unless requested"],
-    categories: ["Cupcakes", "Birthday Cakes", "Mini Cakes"],
+    categories: ["Wedding Cakes"],
     itinerary: [
       {
         day: 1,
@@ -500,21 +493,21 @@ export const cakesData: Cake[] = [
   },
   {
     id: 9,
-    title: "Lemon Elderflower Cake",
-    image: weddingImages[11],
-    gallery: weddingImages.slice(8, 12),
+    title: "Wedding Fruit Cake Portions",
+    image: cakeGalleries.weddingFruit[0],
+    gallery: cakeGalleries.weddingFruit,
     duration: "Serves 14–16",
     durationDays: 16,
-    startLocation: "Lemon sponge",
-    endLocation: "Elderflower cream",
+    startLocation: "Rich fruit cake",
+    endLocation: "Iced portions",
     price: 12500,
     shortDescription:
-      "Bright lemon layers, elderflower cream and a garden-party finish.",
+      "Iced wedding fruit cake squares — extra photos of the same portions.",
     overview:
-      "A light, fragrant cake for engagements, garden weddings and spring birthdays. Lemon sponge, elderflower syrup and a cloud of cream, finished with fresh flowers.",
-    places: ["Lemon", "Elderflower", "Vanilla", "Berry"],
-    accommodation: "Three-layer lemon sponge",
-    transport: "8 inch tall",
+      "Traditional wedding fruit cake cut into iced squares. The gallery is this same fruit cake, photographed as a batch of portions.",
+    places: ["Fruit cake", "Royal icing", "Wedding portions", "Marzipan"],
+    accommodation: "Iced fruit cake squares",
+    transport: "Portion box",
     meals: "5 days notice",
     highlights: [
       "Fresh citrus flavour",
@@ -524,7 +517,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Flower garnish", "Cake box", "Serving card"],
     excluded: ["Imported elderflower if out of stock — we use a homemade syrup"],
-    categories: ["Wedding Cakes", "Custom Cakes", "Anniversary Cakes"],
+    categories: ["Wedding Cakes"],
     itinerary: [
       {
         day: 1,
@@ -549,20 +542,20 @@ export const cakesData: Cake[] = [
   },
   {
     id: 10,
-    title: "Triple Chocolate Truffle",
-    image: birthdayImages[1],
-    gallery: birthdayImages.slice(1, 6),
+    title: "Juthula First Letter Cake",
+    image: cakeGalleries.firstLetter[0],
+    gallery: cakeGalleries.firstLetter,
     duration: "Serves 16",
     durationDays: 16,
-    startLocation: "Dark, milk & white",
-    endLocation: "Truffle glaze",
+    startLocation: "Vanilla sponge",
+    endLocation: "First-letter board",
     price: null,
     shortDescription:
-      "A showpiece chocolate cake with truffle ganache — priced to your size.",
+      "Juthula first-letter reading cake with a yellow board — four photos of the same cake.",
     overview:
-      "Three chocolate sponges, three ganaches and a mirror-style truffle glaze. We scale this for intimate dinners or large celebrations. Contact us for a quote.",
-    places: ["Dark chocolate", "Milk chocolate", "White chocolate", "Espresso"],
-    accommodation: "Triple chocolate layers",
+      "A school first-letter celebration cake with a yellow reading board. Every gallery photo is this cake, from different angles.",
+    places: ["Vanilla", "School theme", "Letter board", "Buttercream"],
+    accommodation: "Themed celebration sponge",
     transport: "Custom size",
     meals: "7 days notice",
     highlights: [
@@ -573,7 +566,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Design consult", "Luxury box", "Gold dust on request"],
     excluded: ["Alcohol unless requested", "Same-week rush"],
-    categories: ["Chocolate Cakes", "Custom Cakes", "Celebration Cakes"],
+    categories: ["Celebration Cakes"],
     itinerary: [
       {
         day: 1,
@@ -603,21 +596,21 @@ export const cakesData: Cake[] = [
   },
   {
     id: 11,
-    title: "Mini Celebration Cakes",
-    image: celebrationImages[5],
-    gallery: [celebrationImages[5], celebrationImages[0], celebrationImages[6], celebrationImages[9], celebrationImages[12]],
+    title: "Mother's Day Mini Set",
+    image: cakeGalleries.mothersDay[0],
+    gallery: cakeGalleries.mothersDay,
     duration: "Set of 6 minis",
     durationDays: 6,
-    startLocation: "Mixed flavours",
-    endLocation: "Petit fours finish",
+    startLocation: "Mint bento cake",
+    endLocation: "Matching cupcakes",
     price: 5400,
     shortDescription:
-      "Six individual cakes — ideal for tasting tables, gifts and small gatherings.",
+      "Mother’s Day mint bento cake with four matching cupcakes — same set in every photo.",
     overview:
-      "A boxed set of 8 cm cakes in mixed flavours. Guests each get their own cake, or you can gift them as favours.",
-    places: ["Vanilla", "Chocolate", "Red velvet", "Lemon"],
-    accommodation: "Individual mini sponges",
-    transport: "Gift box of 6",
+      "A small mint bento cake with four matching cupcakes for Mother’s Day. The gallery shows this same boxed set, not other cakes.",
+    places: ["Vanilla", "Mint cream", "Cupcakes", "Bento cake"],
+    accommodation: "Bento cake plus cupcakes",
+    transport: "Gift box",
     meals: "3 days notice",
     highlights: [
       "Personal name tags",
@@ -627,7 +620,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Ribbon gift box", "Flavour card", "Name tags"],
     excluded: ["Individual cake stands"],
-    categories: ["Mini Cakes", "Cupcakes", "Celebration Cakes"],
+    categories: ["Celebration Cakes"],
     itinerary: [
       {
         day: 1,
@@ -652,21 +645,21 @@ export const cakesData: Cake[] = [
   },
   {
     id: 12,
-    title: "Custom Photo Cake",
-    image: birthdayImages[19],
-    gallery: birthdayImages.slice(19, 24),
+    title: "Avurudu Betel Leaf Cake",
+    image: cakeGalleries.avuruduLeaf[0],
+    gallery: cakeGalleries.avuruduLeaf,
     duration: "Serves 12–20",
     durationDays: 16,
-    startLocation: "Your photo",
-    endLocation: "Edible print",
+    startLocation: "Vanilla sponge",
+    endLocation: "Green betel leaf",
     price: 10500,
     shortDescription:
-      "Your photo, logo or artwork printed on a homemade sponge of your choice.",
+      "Avurudu betel-leaf cake with frangipani flowers — two photos of this cake only.",
     overview:
-      "Send a high-resolution photo and we print it on icing, then finish the cake in matching colours. Popular for milestone birthdays, retirements and brand launches.",
-    places: ["Vanilla", "Chocolate", "Buttercream", "Fondant"],
-    accommodation: "Printed icing on homemade sponge",
-    transport: "8 or 10 inch",
+      "A green betel-leaf cake for Avurudu, with frangipani flowers and a Sinhala New Year greeting. Gallery photos are this cake only, not a mixed table.",
+    places: ["Vanilla", "Green leaf", "Frangipani", "Avurudu"],
+    accommodation: "Leaf-shaped sponge",
+    transport: "Round board",
     meals: "4 days notice",
     highlights: [
       "Edible photo print",
@@ -676,7 +669,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Photo print", "Proof before printing", "Cake box"],
     excluded: ["Copyrighted character art we cannot legally print"],
-    categories: ["Custom Cakes", "Birthday Cakes", "Kids Cakes"],
+    categories: ["Celebration Cakes"],
     itinerary: [
       {
         day: 1,
@@ -701,20 +694,20 @@ export const cakesData: Cake[] = [
   },
   {
     id: 13,
-    title: "Tiramisu Layer Cake",
-    image: weddingImages[6],
-    gallery: [weddingImages[6], weddingImages[7], birthdayImages[0], celebrationImages[12], weddingImages[0]],
+    title: "Happy Birthday Amma Cake",
+    image: cakeGalleries.ammaFloral[0],
+    gallery: cakeGalleries.ammaFloral,
     duration: "Serves 10",
     durationDays: 10,
-    startLocation: "Espresso sponge",
-    endLocation: "Mascarpone cream",
+    startLocation: "Vanilla sponge",
+    endLocation: "Peach flowers",
     price: 8900,
     shortDescription:
-      "Coffee-soaked layers, mascarpone cream and a dusting of cocoa.",
+      "Happy Birthday Amma cake with peach flowers — extra photos of the same cake.",
     overview:
-      "Tiramisu as a sliceable celebration cake. Soft espresso sponge, mascarpone and cocoa — grown-up, not too sweet, lovely after dinner.",
-    places: ["Espresso", "Mascarpone", "Cocoa", "Vanilla"],
-    accommodation: "Coffee-soaked layers",
+      "A peach floral birthday cake with Happy Birthday Amma. Every gallery photo is this cake from another angle.",
+    places: ["Vanilla", "Peach flowers", "Buttercream", "Name message"],
+    accommodation: "Round floral sponge",
     transport: "8 inch round",
     meals: "48 hours notice",
     highlights: [
@@ -725,7 +718,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Cocoa dusting", "Cake box", "Serving notes"],
     excluded: ["Alcohol unless requested"],
-    categories: ["Anniversary Cakes", "Cheesecakes", "Celebration Cakes"],
+    categories: ["Birthday Cakes"],
     itinerary: [
       {
         day: 1,
@@ -751,21 +744,21 @@ export const cakesData: Cake[] = [
   },
   {
     id: 14,
-    title: "Floral Naked Cake",
-    image: weddingImages[0],
-    gallery: weddingImages.slice(0, 5),
+    title: "Spiderman Birthday Cake",
+    image: cakeGalleries.spiderman[0],
+    gallery: cakeGalleries.spiderman,
     duration: "Serves 20–24",
     durationDays: 22,
-    startLocation: "Vanilla & berry",
-    endLocation: "Fresh flowers",
+    startLocation: "Vanilla sponge",
+    endLocation: "Spiderman theme",
     price: 16500,
     shortDescription:
-      "A rustic semi-naked cake with seasonal fruit and garden flowers.",
+      "Spiderman birthday cake for Thiwru, age 5 — extra photos of this cake only.",
     overview:
-      "For couples and hosts who want something pretty but not overly iced. Vanilla sponge, berry jam, a light buttercream scrape and flowers from the garden.",
-    places: ["Vanilla", "Berry jam", "Cream", "Seasonal fruit"],
-    accommodation: "Semi-naked vanilla layers",
-    transport: "9 inch tall",
+      "A Spiderman-themed kids’ birthday cake. The gallery is this same cake from another angle, not a different design.",
+    places: ["Vanilla", "Spiderman theme", "Kids birthday", "Name & age"],
+    accommodation: "Themed kids sponge",
+    transport: "8 inch round",
     meals: "5 days notice",
     highlights: [
       "Photogenic rustic finish",
@@ -775,7 +768,7 @@ export const cakesData: Cake[] = [
     ],
     included: ["Flower crown", "Cake stand hire", "Berry garnish"],
     excluded: ["Fully fondant covering"],
-    categories: ["Wedding Cakes", "Anniversary Cakes", "Custom Cakes"],
+    categories: ["Birthday Cakes"],
     itinerary: [
       {
         day: 1,

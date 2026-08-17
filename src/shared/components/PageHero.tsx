@@ -9,14 +9,16 @@ interface PageHeroProps {
 
 export default function PageHero({ title, subtitle, image, crumb }: PageHeroProps) {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full" style={{ backgroundColor: "#3d2418" }}>
       <div className="relative h-[48vh] min-h-[320px] overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${image})` }}
-        >
-          <div className="absolute inset-0 bg-forest/50" />
-        </div>
+        <img
+          src={image}
+          alt=""
+          aria-hidden
+          className="absolute inset-0 w-full h-full object-cover scale-110 blur-md"
+        />
+        <div className="absolute inset-0 bg-forest/55" />
+
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 pb-16">
           <p className="text-secondary tracking-[0.2em] uppercase text-xs mb-3">From My Oven</p>
           <h1 className="text-4xl md:text-6xl font-display font-semibold text-white mb-4">
